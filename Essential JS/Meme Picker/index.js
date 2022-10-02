@@ -5,11 +5,23 @@ const getImageBtn = document.getElementById("get-image-btn");
 const gifsOnlyOpt = document.getElementById("gifs-only-option");
 const memeModalInner = document.getElementById("meme-modal-inner");
 const memeModal = document.getElementById("meme-modal");
-const memeModalCloseBtn = document.getElementById("meme-modal-close-btn");
+// const memeModalCloseBtn = document.getElementById("meme-modal-close-btn");
 
 emoRadios.addEventListener("change", highlightCheckedOption);
 
-memeModalCloseBtn.addEventListener("click", closeModal);
+// memeModalCloseBtn.addEventListener("click", closeModal);
+document.addEventListener(
+  "click",
+  function (event) {
+    if (
+      event.target.matches("#meme-modal-close-btn") ||
+      !event.target.closest("#meme-modal")
+    ) {
+      closeModal();
+    }
+  },
+  true
+);
 // initialize(0)
 getImageBtn.addEventListener("click", () => {
   try {
