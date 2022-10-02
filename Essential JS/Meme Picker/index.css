@@ -89,6 +89,13 @@ label {
     border-bottom: 0;
 }
 
+.highlight {
+    background-color: #fff0ee;
+    color: #bd301d;
+    font-weight: bold;
+    accent-color: #bd301d;
+}
+
 input[type="radio"] {
     cursor: pointer;
 }
