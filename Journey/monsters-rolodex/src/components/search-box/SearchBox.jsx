@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./search-box.styles.css";
 
 class SearchBox extends Component {
   render() {
@@ -7,7 +8,7 @@ class SearchBox extends Component {
       <div>
         <input
           value={searchField}
-          className={className}
+          className={`search-box ${className}`}
           type="search"
           placeholder={placeholder}
           onChange={onChangeHandler}
