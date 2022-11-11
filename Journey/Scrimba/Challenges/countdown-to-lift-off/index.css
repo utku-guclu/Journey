@@ -1,0 +1,74 @@
+:root {
+    --pink: #fbe6f4ff;
+    --yellow: #fffad1ff;
+    --green: #e1f0e5ff;
+    --blue: #b5caf9ff;
+    --orange: #f5e6db;
+    --raisin: #2b283aff;
+    --grey: #d4d4d4;
+}
+
+body {
+    background-color: var(--raisin);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+.countdown-display {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+.launch {
+    position: relative;
+    animation-name: launch;
+    animation-duration: 19s;
+    padding: 1em;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+@keyframes launch {
+    0% {
+        background-color: transparent;
+        left: 0%;
+        bottom: 0%;
+    }
+
+
+    25% {
+        left: 25%;
+        bottom: 25%;
+        background-color: rgb(217, 255, 0);
+    }
+
+    50% {
+        left: 50%;
+        bottom: 50%;
+        background-color: rgb(255, 166, 0);
+    }
+
+    75% {
+        left: 75%;
+        bottom: 75%;
+        background-color: rgb(255, 81, 0);
+    }
+
+    100% {
+        background-color: red;
+        left: 100%;
+        bottom: 100%;
+    }
+}
