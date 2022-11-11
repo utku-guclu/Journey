@@ -11,3 +11,9 @@ switch to another branch and check it out into your working directory
 merge the specified branch’s history into the current one
 ### git log
 show all commits in the current branch’s history
+### delete branch
+git branch --delete <branchname>
+### remove git  
+rm -rf .git
+  ### restore
+  git reset --hard HEAD
