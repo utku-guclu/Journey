@@ -5,7 +5,6 @@ import { CartContext } from "../../contexts/cart.context";
 import {
   CheckoutItemContainer,
   ImageContainer,
-  Image,
   Desc,
   Quantity,
   Arrow,
@@ -26,7 +25,7 @@ function CheckoutItem({ cartItem }) {
   return (
     <CheckoutItemContainer>
       <ImageContainer>
-        <Image src={imageUrl} alt={name} />
+        <img src={imageUrl} alt={name} />
       </ImageContainer>
       <Desc>{name}</Desc>
       <Quantity>

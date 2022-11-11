@@ -13,18 +13,18 @@ export const CheckoutItemContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 23%;
   padding-right: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
-export const Image = styled.image`
-  width: 100%;
-  height: 100%;
-`;
 export const Desc = styled.span`
   width: 23%;
 `;
 
-export const Quantity = styled.span`
-  ${Desc}
+export const Quantity = styled(Desc)`
+  display: flex;
 `;
 
 export const Arrow = styled.div`
