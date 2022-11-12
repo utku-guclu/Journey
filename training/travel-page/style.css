@@ -53,3 +53,63 @@
 .hero-content a:hover {
   background-color: var(--shining-yellow);
 }
+
+#highlights h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(59, 65, 64);
+  margin: 24px 0;
+}
+
+#destinations {
+  padding: 0;
+  /* margin: auto 0 40px; */
+}
+
+.destination {
+  margin: 0 20px;
+}
+
+.destination p {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(56, 56, 56)
+}
+
+.destination img {
+  height: 25vw;
+  width: 100%;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+  ;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.destination img:hover {
+  transform: scale(1.2);
+}
+
+.destination strong {
+  color: rgb(67, 226, 128);
+}
+
+@media screen and (max-width: 768px) {
+  #destinations {
+    flex-direction: column;
+  }
+
+  .destination {
+    margin: 0;
+  }
+
+  .destination img {
+    height: 100%;
+  }
+
+}

@@ -60,3 +60,7 @@ header>nav a:hover {
   color: rgb(77, 77, 77);
   background-color: var(--shining-yellow);
 }
+
+ul {
+  list-style: none;
+}
