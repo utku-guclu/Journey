@@ -1,6 +1,8 @@
 :root {
   --yellow: rgb(226, 226, 67);
   --shining-yellow: rgb(255, 251, 0);
+  --dark: rgb(60 62 65);
+  --sky: #336877;
 }
 
 body {
@@ -25,7 +27,7 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgb(60 62 65);
+  background: linear-gradient(70deg, var(--dark), var(--sky));
 }
 
 #page-logo a {
@@ -63,4 +65,27 @@ header>nav a:hover {
 
 ul {
   list-style: none;
+}
+
+footer {
+  padding: 20px;
+  background: linear-gradient(70deg, var(--dark), var(--sky));
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+footer li {
+  width: 80px;
+  height: 80px;
+  margin: 50px 50px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
 }

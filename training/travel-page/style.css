@@ -54,6 +54,11 @@
   background-color: var(--shining-yellow);
 }
 
+#highlights {
+  padding: 24px;
+  background: linear-gradient(0deg, rgb(243 208 225), rgb(243 208 225));
+}
+
 #highlights h2 {
   text-transform: uppercase;
   text-align: center;
