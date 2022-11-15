@@ -1,8 +1,8 @@
 :root {
-  --yellow: rgb(226, 226, 67);
-  --shining-yellow: rgb(255, 251, 0);
+  --yellow: white;
+  --shining-yellow: rgb(255, 254, 232);
   --dark: rgb(60 62 65);
-  --sky: #336877;
+  --sky: #465a6a;
 }
 
 body {
@@ -68,7 +68,6 @@ ul {
 }
 
 footer {
-  padding: 20px;
   background: linear-gradient(70deg, var(--dark), var(--sky));
 }
 
@@ -80,12 +79,11 @@ footer ul {
 }
 
 footer li {
-  width: 80px;
-  height: 80px;
-  margin: 50px 50px;
+
+  margin: 20px 60px;
 }
 
 footer img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
