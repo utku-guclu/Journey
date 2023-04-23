@@ -58,6 +58,7 @@ const addToList = (element, value) => {
   newEl.textContent = currentItemValue;
   element.appendChild(newEl);
 
+  // remove items with double click
   newEl.addEventListener("dblclick", () => {
     let exactLocationOfFoodsInDB = ref(database, `foods/${currentItemID}`);
     // console.log(exactLocationOfFoodsInDB);
