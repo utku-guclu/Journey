@@ -16,7 +16,7 @@ const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const foodsInDB = ref(database, "foods");
 
-console.log(app);
+// console.log(app);
 
 const inputFieldEl = document.getElementById("input-field");
 const addButtonEl = document.getElementById("add-button");
@@ -29,7 +29,7 @@ addButtonEl.addEventListener("click", function () {
 
   clearValue(inputFieldEl);
   //   addToList(shoppingList, inputValue);
-//   console.log(`${inputValue} added to database`);
+  //   console.log(`${inputValue} added to database`);
 });
 
 // updates the database
@@ -43,7 +43,7 @@ onValue(foodsInDB, function (snapshot) {
       addToList(shoppingList, food);
     });
   } else {
-    shoppingList.innerHTML = "No items here...";
+    shoppingList.innerHTML = "No jutsu here...";
   }
 });
 
@@ -60,7 +60,7 @@ const addToList = (element, value) => {
 
   newEl.addEventListener("dblclick", () => {
     let exactLocationOfFoodsInDB = ref(database, `foods/${currentItemID}`);
-    console.log(exactLocationOfFoodsInDB);
+    // console.log(exactLocationOfFoodsInDB);
     remove(exactLocationOfFoodsInDB);
   });
 };
